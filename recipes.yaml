@@ -15,3 +15,14 @@ recipes:
               description: Auth key provided by tailscale
             - name: hostname
               description: Machine name to distinguish from others
+      v2.0:
+        playbook: optional/tailscale_setup-v1.0.yaml
+        metadata:
+          supported_arch:
+            - x86_64
+          minimum_ram_gb: 4
+          options:
+            - name: auth_key
+              description: Auth key 
+            - name: hostname
+              description: Machine name 
