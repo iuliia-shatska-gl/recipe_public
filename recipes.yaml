@@ -1,6 +1,6 @@
 recipes:
   tailscale_branch_main:
-    name: Tailscale
+    name: Tailscale_main
     description: Installs Tailscale and connects to the tailnet using the provided auth key
     versions:
       v1.0:
