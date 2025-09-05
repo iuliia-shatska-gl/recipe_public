@@ -1,5 +1,5 @@
 recipes:
-  tailscale:
+  tailscale_branch_main:
     name: Tailscale
     description: Installs Tailscale and connects to the tailnet using the provided auth key
     versions:
@@ -9,20 +9,10 @@ recipes:
           supported_arch:
             - x86_64
             - arm64
-          minimum_ram_gb: 2
+          minimum_ram_gb: 12
           options:
             - name: auth_key
               description: Auth key provided by tailscale
             - name: hostname
               description: Machine name to distinguish from others
-      v2.0:
-        playbook: optional/tailscale_setup-v1.0.yaml
-        metadata:
-          supported_arch:
-            - x86_64
-          minimum_ram_gb: 4
-          options:
-            - name: auth_key
-              description: Auth key 
-            - name: hostname
-              description: Machine name 
+    
