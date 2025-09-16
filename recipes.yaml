@@ -19,7 +19,7 @@ recipes:
         metadata:
           supported_arch:
             - x86_64
-          minimum_ram_gb: 0.1
+          minimum_ram_gb: 0,1
           options:
             - name: auth_key
               description: Auth key 
